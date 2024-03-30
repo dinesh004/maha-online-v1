@@ -1,0 +1,129 @@
+
+
+.card {
+    background-color: #fff;
+    border-radius: 10px;
+    border: none;
+    position: relative;
+    margin-bottom: 30px;
+    box-shadow: 0 0.46875rem 2.1875rem rgba(90,97,105,0.1), 0 0.9375rem 1.40625rem rgba(90,97,105,0.1), 0 0.25rem 0.53125rem rgba(90,97,105,0.12), 0 0.125rem 0.1875rem rgba(90,97,105,0.1);
+  }
+  .l-bg-cherry {
+    background: linear-gradient(to right, #493240, #f09) !important;
+    color: #fff;
+  }
+
+  .l-bg-blue-dark {
+    background: linear-gradient(to right, #373b44, #4286f4) !important;
+    color: #fff;
+  }
+
+  .l-bg-green-dark {
+    background: linear-gradient(to right, #0a504a, #38ef7d) !important;
+    color: #fff;
+  }
+
+  .l-bg-orange-dark {
+    background: linear-gradient(to right, #a86008, #ff9901) !important;
+    color: #fff;
+  }
+
+  .l-bg-yellow-dark {
+    background: linear-gradient(to right, #676949, #eeff56) !important;
+    color: #fff;
+  }
+
+  .l-bg-red-dark {
+    background: linear-gradient(to right, #af3d3d, #fc0202) !important;
+    color: #fff;
+  }
+
+  .card .card-statistic-3 .card-icon-large .fas, .card .card-statistic-3 .card-icon-large .far, .card .card-statistic-3 .card-icon-large .fab, .card .card-statistic-3 .card-icon-large .fal {
+    font-size: 60px;
+  }
+
+  .card .card-statistic-3 .card-icon {
+    text-align: center;
+    line-height: 50px;
+    margin-left: 15px;
+    color: #000;
+    position: absolute;
+    right: auto;
+    top: 30px;
+    opacity: 0.1;
+  }
+
+
+  .equal-height-row {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .equal-height-card {
+    display: flex;
+    flex-direction: column;
+    height: 70%;
+  }
+
+  .equal-height-card .card-statistic-3 {
+    flex-grow: 2;
+  }
+
+  .equal-height-card:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease-in-out;
+  }
+
+
+  .scrolling-text {
+    display: inline-block;
+    background-color: yellow;
+    color: red;
+    padding: 10px; /* Add padding for better readability */
+    white-space: nowrap; /* Prevent text from wrapping */
+    animation: none; /* Set up the animation */
+  }
+  .scrolling-text.start-scrolling {
+    animation: scroll 40s linear infinite; /* Enable the animation after component initialization */
+  }
+
+  @keyframes scroll {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+
+
+  .row {
+    display: flex; /* Use flexbox layout */
+    align-items: center; /* Align items vertically */
+}
+
+.row span {
+    flex: 1; /* Distribute available space evenly */
+    text-align: center; /* Center text horizontally */
+    color: white !important; /* Important to override any other styles */
+    font-weight: bold;
+}
+
+.flex {
+    display: flex;
+    align-items: center; /* Align items vertically */
+}
+
+.justify-content-between {
+    justify-content: space-between; /* Space items evenly */
+}
+
+.vertical-line {
+    border-left: 1px solid white; /* Set the color to white */
+    height: 100%; /* Adjust the height as needed */
+    margin-right: 10px; /* Adjust the margin as needed */
+    min-height: 100px; /* Ensure a minimum height */
+}
+
+
+

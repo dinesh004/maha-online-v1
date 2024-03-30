@@ -1,0 +1,197 @@
+<p-dialog header="NOTICE BOARD" [(visible)]="displayPopup">
+    <!-- Your pop-up content goes here -->
+
+<div class="card">
+    <p-table [value]="products" styleClass="p-datatable-gridlines" [tableStyle]="{ 'min-width': '50rem' }">
+        <!-- <ng-template pTemplate="caption"> NOTICE BOARD </ng-template> -->
+        <ng-template pTemplate="header">
+            <tr>
+                <th>S No</th>
+                <th>Dated</th>
+                <th>Titile (English)</th>
+                <th>Title (Marathi)</th>
+                <th>Detail</th>
+            </tr>
+        </ng-template>
+        <ng-template pTemplate="body">
+            <tr>
+                <td>1</td>
+                <td>26/03/2024</td>
+                <td>Important Notice about Maratha Caste Certificate</td>
+                <td>मराठा कास्ट सर्टिफिकेट बद्दल महत्वाची सूचना</td>
+                <td>प्रति आपले सरकार सेवा केंद्र चालक व महसूल विभागीय अधिकारी , मराठा कास्ट सर्टिफिकेट बद्दल दिनांक १९ मार्च २०२४ रोजी वरिष्ठ पातळीवर एक बैठक घेण्यात आली त्यात सगळ्या जिल्ह्याचे RDC आणि इतर वरिष्ठ अधिकारी उपस्थित होते त्या बैठकीत मराठा कास्ट सर्टिफिकेट बद्दल पुढील निर्णय घेण्यात आला सध्या पोर्टल वर अस्तित्वात असलेले SEBC नॉन क्रिमी लेयर सर्टिफिकेट हे शासन निर्णय १५ मार्च २०२४ प्रमाणे उपलब्ध आहे तरी आपण नॉन क्रीमी लेयर मधील पार्ट A हा कास्ट सर्टिफिकेट व पार्ट B हे नॉन क्रिमी लेयर सर्टिफिकेट म्हणून देऊ शकता.</td>
+
+            </tr>
+        </ng-template>
+    </p-table>
+</div>
+  </p-dialog>
+
+
+  <h2 class="topcategory">Menu</h2>
+  <hr style="border: none; height: 2px; background-color: orange;">
+
+
+
+  <div class="grid">
+    <div class="col-12 lg:col-6 xl:col-3">
+        <div class="flex justify-content-between card l-bg-cherry mb-0" style="height: 220px;">
+                <i class="pi pi-chart-bar" style="align-self: center;"></i>
+                <div class="vertical-line"></div>
+                <div>
+                    <div class="text-900 font-medium text-xl" style="color: white !important; white-space: nowrap;">Transactions Count</div>
+                    <hr class="font-bold">
+                    <div class="row">
+                        <span class="block text-500 font-medium">Yearly</span>
+                        <span class="block text-500 font-medium">0</span>
+                    </div>
+                    <hr>
+                    <div class="row">
+                        <span class="block text-500 font-medium">Monthly</span>
+                        <span class="block text-500 font-medium">0</span>
+                    </div>
+                </div>
+
+        </div>
+    </div>
+
+    <div class="col-12 lg:col-6 xl:col-3">
+        <div class="card l-bg-blue-dark mb-0 flex justify-content-between" style="height: 220px;">
+
+                <i class="pi pi-credit-card" style="align-self: center;"></i>
+                <div class="vertical-line"></div>
+                <div>
+                    <div class="text-900 font-medium text-xl" style="color: white !important; white-space: nowrap;">PoS Transactions</div>
+                    <hr class="font-bold">
+                    <div class="row">
+                        <span class="block text-500 font-medium">Yearly</span>
+                        <span class="block text-500 font-medium">0</span>
+                    </div>
+                    <hr>
+                    <div class="row">
+                        <span class="block text-500 font-medium">Monthly</span>
+                        <span class="block text-500 font-medium">0</span>
+                    </div>
+                    <hr>
+                    <div class="row">
+                        <span class="block text-500 font-medium">Total Pending</span>
+                        <span class="block text-500 font-medium">0</span>
+                    </div>
+                </div>
+
+        </div>
+    </div>
+
+    <div class="col-12 lg:col-6 xl:col-3">
+        <div class="card l-bg-green-dark mb-0 flex justify-content-between" style="height: 220px;">
+
+                <i class="pi pi-dollar" style="align-self: center;"></i>
+                <div class="vertical-line"></div>
+                <div>
+                    <div class="flex items-center">
+                        <div class="text-900 font-medium text-xl" style="color: white !important;">Wallet Balance</div>
+                        <p-button label="Refill" severity="danger" styleClass="p-button-sm"></p-button>
+                    </div>
+                    <hr class="font-bold">
+                </div>
+            </div>
+
+    </div>
+
+    <div class="col-12 lg:col-6 xl:col-3">
+        <div class="card l-bg-orange-dark mb-0 flex justify-content-between" style="height: 220px;">
+
+                <i class="pi pi-user" style="align-self: center;"></i>
+                <div class="vertical-line"></div>
+                <div>
+                    <div class="text-900 font-medium text-xl" style="color: white !important; white-space: nowrap;">eTransaction Status</div>
+                    <hr class="font-bold">
+                    <div class="row">
+                        <span class="block text-500 font-medium">Pending</span>
+                        <span class="block text-500 font-medium">-----</span>
+                    </div>
+                    <hr>
+                    <div class="row">
+                        <span class="block text-500 font-medium">Close</span>
+                        <span class="block text-500 font-medium">-----</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+</div>
+
+
+
+
+
+  <div class="grid-container">
+    <div class="scrolling-text" [ngClass]="{'start-scrolling': isComponentInitialized}">
+        मागील फायनान्शियल  इयर डेटा लाईव्ह सर्वर वरून टेप मध्ये संलग्न करण्याचे काम करण्यात येणार आहे , त्यामुळे मागील फायनान्शियल  इयरचे रिपोर्ट आपण डाउनलोड करून जतन  करावे डेटा लाईव्ह सर्वर वरून टेप मध्ये संलग्न केल्यानंतर आपणास आपल्या लॉगिन मध्ये दिसणार नाही . तसेच आपले जुने अप्रूव्हल झालेले प्रमाण पत्र आपणास आपल्या लॉगिन मध्ये दिसणार नाही कृपया आपण ते डाउनलोड करून आपण जतन  करावे किंवा  नागरिकांना https://www.digilocker.gov.in/ पोर्टलवर सेव्ह  करण्यास सांगावे जेणेकरून आपण या पुढे कधीही तेथून वापरासाठी उपयुक्त ठरेल.
+    </div>
+  </div>
+
+
+  <div class="my-3"></div>
+
+   <div class="grid">
+
+
+        <div class="col-12 xl:col-6">
+            <div class="card">
+                <p-panel header="Last 10 Electronic Transactions" [toggleable]="true">
+
+<div class="card">
+    <p-table [value]="products" [tableStyle]="{ 'min-width': '50rem' }">
+        <ng-template pTemplate="header">
+            <tr>
+                <th>Name Of Citizen</th>
+                <th>Service</th>
+                <th>Date</th>
+                <th>Status</th>
+            </tr>
+        </ng-template>
+        <ng-template pTemplate="body" let-product>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+        </ng-template>
+    </p-table>
+</div>
+                </p-panel>
+            </div>
+            <div class="card">
+
+                <p-panel header="Support" [toggleable]="true">
+
+                </p-panel>
+            </div>
+        </div>
+
+        <div class="col-12 xl:col-6">
+            <div class="card">
+                <p-panel header="eLOCKER" [toggleable]="true">
+                    <ul p-list>
+                        <li>Login using Aadhaar</li>
+                        <li>Upload Documents</li>
+                        <li>View Documents Issued by Dept.</li>
+                        <li>Digitally Signed Documents</li>
+                        <li>Share Your Documents</li>
+                      </ul>
+                      <p-button label="View More"></p-button>
+                      <p-button label="Register Yourself"></p-button>
+                </p-panel>
+
+            </div>
+
+
+
+
+    </div>
+</div>
+
+
+
